@@ -19,10 +19,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets: 
+    - assets/images/
   fonts:
     # - family: Horse
     #   fonts:
     #     - asset: fonts/Horse.ttf
     - family: Merienda
       fonts:
-        - asset: fonts/Merienda-VariableFont_wght.ttf
+        - asset: assets/fonts/Merienda-VariableFont_wght.ttf

@@ -9,10 +9,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'EventEquine',
-      theme: ThemeData(),
-      home: const MyHomePage(title: 'Home Page'),
+      home: MyHomePage(title: 'Home Page'),
     );
   }
 }
@@ -31,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         appBar: AppBar(
           // change to an image?
-          title: Text(widget.title),
+          title: Image.asset("assets/images/logo.png")
         ),
         body: const Center(
           child: Column(
@@ -52,13 +51,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Text('Drawer Header'),
               ),
               ListTile(
-                title: Text('Item 1'),
+                title: const Text('Item 1'),
                 onTap: () {
                   Navigator.pop(context);
                 },
               ),
               ListTile(
-                title: Text('Item 2'),
+                title: const Text('Item 2'),
                 onTap: () {
                   Navigator.pop(context);
                 },
